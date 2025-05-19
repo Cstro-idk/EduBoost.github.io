@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Estudiantil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Plataforma Estudiantil</h1>
+        </div>
+        <nav>
+  <ul>
+    <li><a href="#inicio"> Inicio</a></li>
+    <li><a href="#calendario"> Calendario</a></li>
+    <li><a href="#cursos"> Cursos</a></li>
+    <li><a href="#cuenta"> Mi Cuenta</a></li>
+  </ul>
+</nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccion-activa">
+            <h2>Bienvenido a EduBoost</h2>
+            <p>Esta plataforma te permite acceder a tus cursos, ver el calendario académico y mantenerte informado sobre las actividades escolares.</p>
+            
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h3>Mis Cursos</h3>
+                    <p>Accede a los materiales de tus cursos actuales.</p>
+                    <a href="#cursos" class="boton">Ver cursos</a>
+                </div>
+                
+                <div class="tarjeta">
+                    <h3>Calendario</h3>
+                    <p>Consulta las fechas importantes del semestre.</p>
+                    <a href="#calendario" class="boton">Ver calendario</a>
+                </div>
+                
+                <div class="tarjeta">
+                    <h3>Contacto</h3>
+                    <p>Comunícate con tus profesores y compañeros.</p>
+                    <a href="#contacto" class="boton">Contactar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendario" class="seccion-oculta">
+            <h2>Calendario Académico</h2>
+            <div class="calendario">
+                <div class="mes">
+                    <h3>Septiembre 2025</h3>
+                    <table>
+                        <tr>
+                            <th>Lun</th><th>Mar</th><th>Mié</th><th>Jue</th><th>Vie</th><th>Sáb</th><th>Dom</th>
+                        </tr>
+                        <tr>
+                            <td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td>
+                        </tr>
+                        <tr>
+                            <td>11</td><td>12</td><td class="evento">13<span>Inicio de clases</span></td><td>14</td><td>15</td><td>16</td><td>17</td>
+                        </tr>
+                        <tr>
+                            <td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+                        </tr>
+                        <tr>
+                            <td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="eventos-destacados">
+                    <h3>Eventos Importantes</h3>
+                    <ul>
+                        <li><strong>13 Sept:</strong> Inicio de clases</li>
+                        <li><strong>15 Oct:</strong> Primer examen parcial</li>
+                        <li><strong>20 Nov:</strong> Entrega de proyectos</li>
+                        <li><strong>10 Dic:</strong> Examen final</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#inicio" class="boton">Volver al inicio</a>
+        </section>
+
+        <section id="cursos" class="seccion-oculta">
+            <h2>Mis Cursos</h2>
+            <div class="lista-cursos">
+                <div class="curso">
+                    <h3>Matemáticas Avanzadas</h3>
+                    <p>Profesor: Dr. Juan Pérez</p>
+                    <p>Horario: Lunes y Miércoles 10:00-12:00</p>
+                    <a href="#" class="boton">Acceder</a>
+                </div>
+                
+                <div class="curso">
+                    <h3>Programación Web</h3>
+                    <p>Profesor: Ing. María Gómez</p>
+                    <p>Horario: Martes y Jueves 14:00-16:00</p>
+                    <a href="#" class="boton">Acceder</a>
+                </div>
+                
+                <div class="curso">
+                    <h3>Historia del Arte</h3>
+                    <p>Profesor: Lic. Carlos Ruiz</p>
+                    <p>Horario: Viernes 9:00-12:00</p>
+                    <a href="#" class="boton">Acceder</a>
+                </div>
+            </div>
+            <a href="#inicio" class="boton">Volver al inicio</a>
+        </section>
+
+        <section id="contacto" class="seccion-oculta">
+            <h2>Contacto</h2>
+            <div class="info-contacto">
+                <div>
+                    <h3>Oficina de Admisiones</h3>
+                    <p>Email: admisiones@universidad.edu</p>
+                    <p>Teléfono: (555) 123-4567</p>
+                </div>
+                
+                <div>
+                    <h3>Departamento Académico</h3>
+                    <p>Email: academico@universidad.edu</p>
+                    <p>Teléfono: (555) 765-4321</p>
+                </div>
+            </div>
+            
+            <form class="formulario-contacto">
+                <h3>Envíanos un mensaje</h3>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit" class="boton">Enviar Mensaje</button>
+            </form>
+            <a href="#inicio" class="boton">Volver al inicio</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Plataforma Estudiantil. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
