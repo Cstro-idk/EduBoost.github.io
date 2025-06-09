@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -35,7 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: blue;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
@@ -74,7 +74,7 @@ h2 {
     margin-top: 0;
 }
 
-/* Estilos para las tarjetas */
+
 .tarjetas {
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@ h2 {
     transform: translateY(-5px);
 }
 
-/* Estilos para el calendario */
+/
 .calendario {
     display: flex;
     flex-wrap: wrap;
@@ -167,7 +167,7 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-/* Estilos para los cursos */
+
 .lista-cursos {
     display: flex;
     flex-wrap: wrap;
@@ -182,7 +182,7 @@ h2 {
     box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 
-/* Estilos para el formulario de contacto */
+
 .info-contacto {
     display: flex;
     flex-wrap: wrap;
@@ -218,7 +218,7 @@ h2 {
     min-height: 100px;
 }
 
-/* Estilos para botones */
+
 .boton {
     display: inline-block;
     background-color: #3498db;
@@ -234,7 +234,7 @@ h2 {
     background-color: #2980b9;
 }
 
-/* Estilos para el footer */
+
 footer {
     background-color: #2c3e50;
     color: white;
@@ -242,15 +242,15 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
-/* Barra de navegación más llamativa */
+
 header {
-  background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+  background: linear-gradient(135deg)
   color: white;
   padding: 1rem 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Tarjetas con efecto hover más dinámico */
+
 .tarjeta {
   background: white;
   border-radius: 10px;
@@ -263,7 +263,7 @@ header {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Botones más atractivos */
+
 .boton {
   background-color: var(--color-botones);
   border: none;
